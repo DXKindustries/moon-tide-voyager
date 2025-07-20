@@ -58,12 +58,16 @@ const Header = () => {
       </div>
 
       {/* Mobile Navigation Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden mt-4 pb-4 border-t border-white/10">
-          <nav className="flex flex-col gap-4 pt-4">
+      <div 
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+        }`}
+      >
+        <div className="mt-4 pb-4 border-t border-white/10">
+          <nav className="flex flex-col gap-4 pt-4 animate-fade-in">
             <a 
               href="/#features" 
-              className="font-body text-base font-medium hover:opacity-80 transition-opacity block"
+              className="font-body text-base font-medium hover:opacity-80 transition-opacity block transform hover:translate-x-2 transition-transform duration-200"
               style={{ color: 'var(--color-text-light)' }}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -71,7 +75,7 @@ const Header = () => {
             </a>
             <a 
               href="/walkthrough" 
-              className="font-body text-base font-medium hover:opacity-80 transition-opacity block"
+              className="font-body text-base font-medium hover:opacity-80 transition-opacity block transform hover:translate-x-2 transition-transform duration-200"
               style={{ color: 'var(--color-text-light)' }}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -79,7 +83,7 @@ const Header = () => {
             </a>
             <a 
               href="/about" 
-              className="font-body text-base font-medium hover:opacity-80 transition-opacity block"
+              className="font-body text-base font-medium hover:opacity-80 transition-opacity block transform hover:translate-x-2 transition-transform duration-200"
               style={{ color: 'var(--color-text-light)' }}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -87,7 +91,7 @@ const Header = () => {
             </a>
             <a 
               href="/contact" 
-              className="font-body text-base font-medium hover:opacity-80 transition-opacity block"
+              className="font-body text-base font-medium hover:opacity-80 transition-opacity block transform hover:translate-x-2 transition-transform duration-200"
               style={{ color: 'var(--color-text-light)' }}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -95,7 +99,7 @@ const Header = () => {
             </a>
           </nav>
         </div>
-      )}
+      </div>
     </header>
   );
 };
