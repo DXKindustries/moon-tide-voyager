@@ -42,11 +42,12 @@ const AppScreenAnimation = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentScreen(prev => (prev + 1) % screens.length);
-    }, 4000); // Increased to 4 seconds for better viewing time
+      const nextIndex = (currentScreen + 1) % screens.length;
+      goToScreen(nextIndex);
+    }, 4000);
 
     return () => clearInterval(interval);
-  }, [screens.length]);
+  }, [currentScreen, screens.length, goToScreen]);
 
   return (
     <div className="relative">
