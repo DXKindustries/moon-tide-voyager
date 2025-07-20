@@ -41,20 +41,12 @@ const AppScreenAnimation = () => {
   }, [currentScreen, isTransitioning]);
 
   useEffect(() => {
-    // Add a small delay before starting the interval to ensure component is fully mounted
-    const startTimer = setTimeout(() => {
-      const interval = setInterval(() => {
-        const next = (currentScreen + 1) % screens.length;
-        goToScreen(next);
-      }, 3000);
+    const interval = setInterval(() => {
+      setCurrentScreen(prev => (prev + 1) % screens.length);
+    }, 4000); // Increased to 4 seconds for better viewing time
 
-      return () => clearInterval(interval);
-    }, 100);
-
-    return () => {
-      clearTimeout(startTimer);
-    };
-  }, [currentScreen, screens.length, goToScreen]);
+    return () => clearInterval(interval);
+  }, [screens.length]);
 
   return (
     <div className="relative">
