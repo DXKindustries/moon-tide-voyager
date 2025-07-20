@@ -34,6 +34,18 @@ const WalkthroughSection = () => {
         "/lovable-uploads/36eb062a-8595-4377-a440-003c7cd399bc.png",
         "/lovable-uploads/bc28877f-15d6-4815-a10b-acbd0681d493.png"
       ]
+    },
+    {
+      id: 4,
+      title: "Switch Locations Easily",
+      description: "Change tide stations by selecting favorite states, searching by distance radius, or typing location names for instant results.",
+      images: [
+        "/lovable-uploads/4f567ae3-2200-4d8d-b7aa-0f39a4401a5c.png",
+        "/lovable-uploads/88715845-1810-44dd-82b8-9ede31d4af5c.png",
+        "/lovable-uploads/b5440ebc-23a9-4ef7-907d-2547fc72414e.png",
+        "/lovable-uploads/8857c36f-4e5c-46af-a89d-e4fee65c2b2a.png",
+        "/lovable-uploads/32a6a308-4851-47e7-911a-69bc3b300024.png"
+      ]
     }
   ];
 
