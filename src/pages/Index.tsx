@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import FeatureGrid from "@/components/FeatureGrid";
+import WalkthroughSection from "@/components/WalkthroughSection";
 
 const Index = () => {
   return (
@@ -8,6 +9,7 @@ const Index = () => {
       <Header />
       <Hero />
       <FeatureGrid />
+      <WalkthroughSection />
     </div>
   );
 };
