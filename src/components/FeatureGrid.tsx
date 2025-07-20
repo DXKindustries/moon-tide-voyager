@@ -28,7 +28,7 @@ const FeatureGrid = () => {
   return (
     <section id="features" className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8" 
              style={{ backgroundColor: 'var(--color-bg-dark)' }}>
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         
         {/* Section Header */}
         <div className="text-center mb-16">

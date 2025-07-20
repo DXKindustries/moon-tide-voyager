@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="py-12 px-4 sm:px-6 lg:px-8" 
             style={{ backgroundColor: 'var(--color-bg-dark)', borderTop: '1px solid hsl(var(--color-purple) / 0.2)' }}>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-2">

@@ -5,6 +5,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" 
              style={{ backgroundColor: 'var(--color-bg-dark)' }}>
+      <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between">
       
       {/* Content Section */}
       <div className="flex-1 max-w-2xl text-center lg:text-left mb-8 sm:mb-12 lg:mb-0 lg:pr-8">
@@ -38,6 +39,7 @@ const Hero = () => {
         <div className="w-full max-w-[320px] lg:max-w-none">
           <AppScreenAnimation />
         </div>
+      </div>
       </div>
     </section>
   );
