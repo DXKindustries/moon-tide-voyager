@@ -106,18 +106,6 @@ const Header = () => {
               >
                 Support
               </a>
-              
-              {/* Mobile CTA Button */}
-              <div className="pt-4 px-2">
-                <a 
-                  href="#download" 
-                  className="button primary w-full text-center block py-4 px-6 text-base rounded-lg touch-manipulation"
-                  style={{ minHeight: '48px' }}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Download App
-                </a>
-              </div>
             </nav>
           </div>
         </div>
