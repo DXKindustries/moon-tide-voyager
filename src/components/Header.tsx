@@ -25,8 +25,19 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="/#features" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
-             style={{ color: 'var(--color-text-light)' }}>
+          <a 
+            href="/" 
+            className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
+            style={{ color: 'var(--color-text-light)' }}
+            onClick={(e) => {
+              e.preventDefault();
+              if (window.location.pathname === '/') {
+                document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
+              } else {
+                window.location.href = '/#features';
+              }
+            }}
+          >
             Features
           </a>
           <a href="/walkthrough" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
@@ -75,10 +86,18 @@ const Header = () => {
           <div className="border-t border-white/10 shadow-lg">
             <nav className="flex flex-col px-4 py-4 space-y-1">
               <a 
-                href="/#features" 
+                href="/" 
                 className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-4 px-2 rounded-lg hover:bg-white/5 touch-manipulation"
                 style={{ color: 'var(--color-text-light)', minHeight: '44px' }}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMenuOpen(false);
+                  if (window.location.pathname === '/') {
+                    document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
+                  } else {
+                    window.location.href = '/#features';
+                  }
+                }}
               >
                 Features
               </a>

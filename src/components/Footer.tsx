@@ -31,8 +31,19 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="/#features" className="font-body text-sm hover:opacity-80 transition-opacity"
-                   style={{ color: 'var(--color-text-light)' }}>
+                <a 
+                  href="/" 
+                  className="font-body text-sm hover:opacity-80 transition-opacity"
+                  style={{ color: 'var(--color-text-light)' }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (window.location.pathname === '/') {
+                      document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                      window.location.href = '/#features';
+                    }
+                  }}
+                >
                   Features
                 </a>
               </li>
