@@ -1,4 +1,11 @@
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 py-4" 
             style={{ backgroundColor: 'var(--color-bg-dark)' }}>
@@ -16,7 +23,7 @@ const Header = () => {
           </span>
         </a>
 
-        {/* Navigation - Hidden on mobile, can be added later */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           <a href="/#features" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
              style={{ color: 'var(--color-text-light)' }}>
@@ -35,7 +42,60 @@ const Header = () => {
             Support
           </a>
         </nav>
+
+        {/* Mobile Menu Button */}
+        <button 
+          onClick={toggleMenu}
+          className="md:hidden p-2 hover:opacity-80 transition-opacity"
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? (
+            <X size={24} style={{ color: 'var(--color-text-light)' }} />
+          ) : (
+            <Menu size={24} style={{ color: 'var(--color-text-light)' }} />
+          )}
+        </button>
       </div>
+
+      {/* Mobile Navigation Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden mt-4 pb-4 border-t border-white/10">
+          <nav className="flex flex-col gap-4 pt-4">
+            <a 
+              href="/#features" 
+              className="font-body text-base font-medium hover:opacity-80 transition-opacity block"
+              style={{ color: 'var(--color-text-light)' }}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Features
+            </a>
+            <a 
+              href="/walkthrough" 
+              className="font-body text-base font-medium hover:opacity-80 transition-opacity block"
+              style={{ color: 'var(--color-text-light)' }}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              How It Works
+            </a>
+            <a 
+              href="/about" 
+              className="font-body text-base font-medium hover:opacity-80 transition-opacity block"
+              style={{ color: 'var(--color-text-light)' }}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </a>
+            <a 
+              href="/contact" 
+              className="font-body text-base font-medium hover:opacity-80 transition-opacity block"
+              style={{ color: 'var(--color-text-light)' }}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Support
+            </a>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
