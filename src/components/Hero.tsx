@@ -9,93 +9,63 @@ const Hero = () => {
       {/* Content Section */}
       <div className="flex-1 max-w-2xl text-center lg:text-left mb-12 lg:mb-0">
         {/* Headline */}
-        <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-normal leading-tight mb-6">
-          <span className="gradient-hero">
-            Move with the Moon.
+        <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-normal leading-tight mb-8">
+          <span style={{ color: 'hsl(var(--color-text-light))' }}>
+            Track lunar cycles.
           </span>
           <br />
-          <span className="gradient-hero">
-            Read the Tides.
-          </span>
-          <br />
-          <span className="gradient-hero">
-            Know the Daylight.
+          <span style={{ color: 'hsl(var(--color-text-light))' }}>
+            Read the tides.
           </span>
         </h1>
 
         {/* Subheadline */}
-        <p className="font-body text-lg sm:text-xl lg:text-2xl leading-relaxed mb-8 lg:mb-12"
-           style={{ color: 'hsl(var(--color-text-light))' }}>
-          NOAA-backed tide forecasts, moon phase tracking, and sunrise/sunset timing — all by ZIP code.
+        <p className="font-body text-lg sm:text-xl leading-relaxed mb-12"
+           style={{ color: 'hsl(var(--color-grey))' }}>
+          NOAA-backed tide forecasts and moon phase tracking by ZIP code.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
-          <a href="#download" className="button primary text-lg px-8 py-4">
-            Download for Android
-          </a>
-          <a href="#download" className="button secondary text-lg px-8 py-4">
-            iOS Coming Soon
+        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <a href="#download" className="button primary text-base px-6 py-3">
+            Download App
           </a>
         </div>
       </div>
 
-      {/* Phone Mockup Section */}
-      <div className="flex-1 flex justify-center lg:justify-end max-w-md lg:max-w-lg">
-        <div className="relative transform rotate-3 hover:rotate-1 transition-transform duration-500">
-          {/* Phone Frame */}
-          <div className="relative rounded-[2.5rem] p-2 shadow-2xl"
-               style={{ backgroundColor: 'var(--color-card-bg)' }}>
-            
-            {/* Screen */}
-            <div className="relative rounded-[2rem] overflow-hidden aspect-[9/19.5] w-72 sm:w-80 lg:w-96"
-                 style={{ backgroundColor: 'var(--color-bg-dark)' }}>
+      {/* Phone in Hand Section */}
+      <div className="flex-1 flex justify-center lg:justify-end">
+        <div className="relative">
+          {/* Hand holding phone mockup */}
+          <div className="relative">
+            {/* Phone with actual app screenshot */}
+            <div className="relative rounded-[2.5rem] shadow-2xl"
+                 style={{ 
+                   backgroundColor: '#1a1a1a',
+                   width: '280px',
+                   height: '572px'
+                 }}>
               
-              {/* Placeholder for app screenshot */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-6">
-                {/* App Header Mockup */}
-                <div className="flex items-center justify-between w-full mb-8">
-                  <div className="flex items-center gap-2">
-                    <img 
-                      src="/lovable-uploads/b6434ef6-0063-42a6-9f5c-19ad66eb88ec.png" 
-                      alt="MoonTide Logo" 
-                      className="w-8 h-8"
-                    />
-                    <span className="font-display text-xl">
-                      <span style={{ color: 'hsl(var(--color-purple))' }}>Moon</span>
-                      <span style={{ color: 'hsl(var(--color-blue))' }}>Tide</span>
-                    </span>
-                  </div>
-                </div>
-
-                {/* Moon Phase Mockup */}
-                <div className="flex flex-col items-center text-center mb-8">
-                  <AnimatedMoon size="lg" phase="waning-crescent" className="mb-4" />
-                  <h3 className="font-display text-lg mb-2" style={{ color: 'hsl(var(--color-purple))' }}>
-                    Waning Crescent
-                  </h3>
-                  <p className="text-sm" style={{ color: 'hsl(var(--color-grey))' }}>
-                    July 18, 2025
-                  </p>
-                </div>
-
-                {/* Data Mockup */}
-                <div className="w-full space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm" style={{ color: 'hsl(var(--color-grey))' }}>Illumination</span>
-                    <span className="font-medium text-lg" style={{ color: 'hsl(var(--color-purple))' }}>43%</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm" style={{ color: 'hsl(var(--color-grey))' }}>Moonrise</span>
-                    <span className="font-medium" style={{ color: 'hsl(var(--color-text-light))' }}>6:42 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm" style={{ color: 'hsl(var(--color-grey))' }}>Moonset</span>
-                    <span className="font-medium" style={{ color: 'hsl(var(--color-text-light))' }}>7:15 AM</span>
-                  </div>
-                </div>
+              {/* Phone bezel */}
+              <div className="absolute inset-0 rounded-[2.5rem] border-4 border-gray-800"></div>
+              
+              {/* Screen content - using the actual app screenshot */}
+              <div className="absolute inset-4 rounded-[1.8rem] overflow-hidden">
+                <img 
+                  src="/lovable-uploads/25da43ba-e22e-4e36-b435-fda53ba25e68.png"
+                  alt="MoonTide App Interface"
+                  className="w-full h-full object-cover"
+                />
               </div>
+
+              {/* Home indicator */}
+              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-white/30 rounded-full"></div>
             </div>
+
+            {/* Subtle hand elements to suggest holding */}
+            <div className="absolute -bottom-4 -left-2 w-8 h-12 bg-gradient-to-t from-amber-100 to-amber-50 rounded-full opacity-40 blur-sm"></div>
+            <div className="absolute -bottom-2 -right-3 w-6 h-10 bg-gradient-to-t from-amber-100 to-amber-50 rounded-full opacity-40 blur-sm"></div>
+            <div className="absolute top-12 -right-4 w-4 h-8 bg-gradient-to-l from-amber-100 to-amber-50 rounded-full opacity-30 blur-sm"></div>
           </div>
         </div>
       </div>
