@@ -24,6 +24,18 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				
+				// MoonTide custom colors
+				'moon-purple': 'var(--color-purple)',
+				'moon-blue': 'var(--color-blue)',
+				'moon-yellow': 'var(--color-yellow)',
+				'moon-orange': 'var(--color-orange)',
+				'moon-red': 'var(--color-red)',
+				'moon-darkblue': 'var(--color-darkblue)',
+				'moon-grey': 'var(--color-grey)',
+				'moon-text-light': 'var(--color-text-light)',
+				'moon-bg-dark': 'var(--color-bg-dark)',
+				'moon-card-bg': 'var(--color-card-bg)',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -62,6 +74,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				'display': ['"DM Serif Display"', 'Georgia', 'serif'],
+				'body': ['Inter', 'Arial', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -2,39 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* MoonTide Design System - All colors, gradients, fonts, etc defined here. 
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* MoonTide Color Palette */
+    --color-purple: #925BEB;
+    --color-blue: #28B6F6;
+    --color-yellow: #FFD21F;
+    --color-orange: #F47C2F;
+    --color-red: #F75C57;
+    --color-darkblue: #3DA5E0;
+    --color-grey: #A0A0A0;
+    --color-text-light: #F1F5F9;
+    --color-bg-dark: #0F172A;
+    --color-now-marker: #B28CF4;
+    --color-card-bg: #1A2335;
+    --color-selection-bg: #7A5EBB;
+    --color-selection-text: #FFFFFF;
+    --color-button-filled: #B28CF4;
+    --color-button-pressed: #4E3E82;
+    
+    /* Convert to HSL for Tailwind compatibility */
+    --background: 210 100% 4%;  /* --color-bg-dark */
+    --foreground: 210 40% 98%;  /* --color-text-light */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 223 27% 16%;  /* --color-card-bg */
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 223 27% 16%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 257 62% 64%;  /* --color-purple */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 223 27% 16%;  /* --color-card-bg */
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 63%;  /* --color-grey */
+    --muted-foreground: 0 0% 63%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 196 87% 57%;  /* --color-blue */
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 3 93% 66%;  /* --color-red */
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 223 27% 25%;
+    --input: 223 27% 25%;
+    --ring: 257 62% 64%;
 
     --radius: 0.5rem;
 
@@ -101,5 +119,50 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', Arial, sans-serif;
+  }
+  
+  /* Typography System */
+  .font-display {
+    font-family: 'DM Serif Display', Georgia, serif;
+  }
+  
+  .font-body {
+    font-family: 'Inter', Arial, sans-serif;
+  }
+  
+  /* Button System */
+  .button {
+    @apply inline-flex items-center justify-center rounded-lg px-6 py-3 font-medium transition-all duration-200;
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  .button.primary {
+    background-color: var(--color-button-filled);
+    color: var(--color-selection-text);
+  }
+  
+  .button.primary:hover {
+    background-color: var(--color-button-pressed);
+  }
+  
+  .button.secondary {
+    background-color: transparent;
+    color: var(--color-text-light);
+    border: 2px solid var(--color-button-filled);
+  }
+  
+  .button.secondary:hover {
+    background-color: var(--color-button-filled);
+    color: var(--color-selection-text);
+  }
+  
+  /* Gradients */
+  .gradient-hero {
+    background: linear-gradient(135deg, var(--color-purple), var(--color-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
