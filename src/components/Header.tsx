@@ -1,8 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const scrollToFeatures = () => {
+    const element = document.getElementById('features');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  useEffect(() => {
+    if (location.pathname === '/' && location.hash === '#features') {
+      setTimeout(scrollToFeatures, 100);
+    }
+  }, [location]);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -25,33 +40,31 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a 
-            href="/" 
+          <Link 
+            to="/#features" 
             className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
             style={{ color: 'var(--color-text-light)' }}
             onClick={(e) => {
-              e.preventDefault();
-              if (window.location.pathname === '/') {
-                document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
-              } else {
-                window.location.href = '/#features';
+              if (location.pathname === '/') {
+                e.preventDefault();
+                scrollToFeatures();
               }
             }}
           >
             Features
-          </a>
-          <a href="/walkthrough" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
+          </Link>
+          <Link to="/walkthrough" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
              style={{ color: 'var(--color-text-light)' }}>
             How It Works
-          </a>
-          <a href="/about" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
+          </Link>
+          <Link to="/about" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
              style={{ color: 'var(--color-text-light)' }}>
             About
-          </a>
-          <a href="/contact" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
+          </Link>
+          <Link to="/contact" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
              style={{ color: 'var(--color-text-light)' }}>
             Support
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -85,46 +98,44 @@ const Header = () => {
         >
           <div className="border-t border-white/10 shadow-lg">
             <nav className="flex flex-col px-4 py-4 space-y-1">
-              <a 
-                href="/" 
+              <Link 
+                to="/#features" 
                 className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-4 px-2 rounded-lg hover:bg-white/5 touch-manipulation"
                 style={{ color: 'var(--color-text-light)', minHeight: '44px' }}
                 onClick={(e) => {
-                  e.preventDefault();
                   setIsMenuOpen(false);
-                  if (window.location.pathname === '/') {
-                    document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
-                  } else {
-                    window.location.href = '/#features';
+                  if (location.pathname === '/') {
+                    e.preventDefault();
+                    scrollToFeatures();
                   }
                 }}
               >
                 Features
-              </a>
-              <a 
-                href="/walkthrough" 
+              </Link>
+              <Link 
+                to="/walkthrough" 
                 className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-4 px-2 rounded-lg hover:bg-white/5 touch-manipulation"
                 style={{ color: 'var(--color-text-light)', minHeight: '44px' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 How It Works
-              </a>
-              <a 
-                href="/about" 
+              </Link>
+              <Link 
+                to="/about" 
                 className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-4 px-2 rounded-lg hover:bg-white/5 touch-manipulation"
                 style={{ color: 'var(--color-text-light)', minHeight: '44px' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </a>
-              <a 
-                href="/contact" 
+              </Link>
+              <Link 
+                to="/contact" 
                 className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-4 px-2 rounded-lg hover:bg-white/5 touch-manipulation"
                 style={{ color: 'var(--color-text-light)', minHeight: '44px' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Support
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
