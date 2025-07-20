@@ -24,6 +24,16 @@ const WalkthroughSection = () => {
         "/lovable-uploads/da1ba0f5-9bbc-4e7b-8885-6561391cd646.png",
         "/lovable-uploads/d0406990-e899-4ac8-9867-f98690e88abd.png"
       ]
+    },
+    {
+      id: 3,
+      title: "Explore the Lunar Calendar",
+      description: "Browse months to see special full moon names like Buck Moon and Harvest Moon, plus solar events like solstices and equinoxes.",
+      images: [
+        "/lovable-uploads/92cdddbf-ccd9-4499-96fc-883309ca879c.png",
+        "/lovable-uploads/36eb062a-8595-4377-a440-003c7cd399bc.png",
+        "/lovable-uploads/bc28877f-15d6-4815-a10b-acbd0681d493.png"
+      ]
     }
   ];
 
