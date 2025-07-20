@@ -45,23 +45,13 @@ const AppScreenAnimation = () => {
         
         {/* Screen content container */}
         <div className="absolute inset-4 rounded-[1.8rem] overflow-hidden">
-          {/* Screen images stacked vertically */}
-          <div 
-            className="transition-transform duration-1000 ease-in-out"
-            style={{ 
-              transform: `translateY(-${currentScreen * 100}%)`,
-              height: `${screens.length * 100}%`
-            }}
-          >
-            {screens.map((screen, index) => (
-              <div key={index} className="w-full h-full" style={{ height: `${100 / screens.length}%` }}>
-                <img 
-                  src={screen.src}
-                  alt={screen.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
+          {/* Current screen only */}
+          <div className="w-full h-full">
+            <img 
+              src={screens[currentScreen].src}
+              alt={screens[currentScreen].title}
+              className="w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
+            />
           </div>
         </div>
 
