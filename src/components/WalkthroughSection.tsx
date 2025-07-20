@@ -12,8 +12,19 @@ const WalkthroughSection = () => {
         "/lovable-uploads/8daddf21-b65d-4854-9dac-8b0333838086.png",
         "/lovable-uploads/25795b27-0c0b-4d99-ad07-bf69a312b23a.png"
       ]
+    },
+    {
+      id: 2,
+      title: "View Your Dashboard",
+      description: "Instantly see current moon phase, tide charts, and solar timing for your location.",
+      images: [
+        "/lovable-uploads/7fd14ce8-0b8b-49c6-a772-7f49cf5dc0e6.png",
+        "/lovable-uploads/16ab048c-aff2-4f64-94d5-63c018bfeac9.png",
+        "/lovable-uploads/3c90c96d-8fda-4fda-b2a4-80f120bee3f4.png",
+        "/lovable-uploads/da1ba0f5-9bbc-4e7b-8885-6561391cd646.png",
+        "/lovable-uploads/d0406990-e899-4ac8-9867-f98690e88abd.png"
+      ]
     }
-    // More steps will be added as images are provided
   ];
 
   return (
