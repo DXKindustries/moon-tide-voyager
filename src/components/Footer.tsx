@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
+            <a href="/" className="flex items-center gap-3 mb-4 hover:opacity-80 transition-opacity">
               <img 
                 src="/lovable-uploads/b6434ef6-0063-42a6-9f5c-19ad66eb88ec.png" 
                 alt="MoonTide Logo" 
@@ -16,7 +16,7 @@ const Footer = () => {
                 <span style={{ color: 'hsl(var(--color-purple))' }}>Moon</span>
                 <span style={{ color: 'hsl(var(--color-blue))' }}>Tide</span>
               </span>
-            </div>
+            </a>
             <p className="font-body text-sm max-w-md" 
                style={{ color: 'var(--color-text-light)' }}>
               NOAA-backed tide forecasts, moon phase tracking, and sunrise/sunset timing — all by ZIP code.
@@ -31,15 +31,27 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#features" className="font-body text-sm hover:opacity-80 transition-opacity"
+                <a href="/#features" className="font-body text-sm hover:opacity-80 transition-opacity"
                    style={{ color: 'var(--color-text-light)' }}>
                   Features
                 </a>
               </li>
               <li>
-                <a href="#download" className="font-body text-sm hover:opacity-80 transition-opacity"
+                <a href="/walkthrough" className="font-body text-sm hover:opacity-80 transition-opacity"
                    style={{ color: 'var(--color-text-light)' }}>
-                  Download
+                  How It Works
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="font-body text-sm hover:opacity-80 transition-opacity"
+                   style={{ color: 'var(--color-text-light)' }}>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="font-body text-sm hover:opacity-80 transition-opacity"
+                   style={{ color: 'var(--color-text-light)' }}>
+                  Support
                 </a>
               </li>
               <li>
@@ -81,7 +93,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="font-body text-sm" 
                style={{ color: 'var(--color-text-light)' }}>
-              © 2024 MoonTide. All rights reserved.
+               © 2025 MoonTide. All rights reserved.
             </p>
             <p className="font-body text-xs" 
                style={{ color: 'var(--color-text-light)' }}>

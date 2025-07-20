@@ -31,10 +31,10 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
-          <a href="#" className="button primary text-lg px-8 py-4">
+          <a href="#download" className="button primary text-lg px-8 py-4">
             Download for Android
           </a>
-          <a href="#" className="button secondary text-lg px-8 py-4">
+          <a href="#download" className="button secondary text-lg px-8 py-4">
             iOS Coming Soon
           </a>
         </div>

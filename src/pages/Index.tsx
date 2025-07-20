@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import FeatureGrid from "@/components/FeatureGrid";
+import DownloadSection from "@/components/DownloadSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -9,6 +10,7 @@ const Index = () => {
       <Header />
       <Hero />
       <FeatureGrid />
+      <DownloadSection />
       <Footer />
     </div>
   );
