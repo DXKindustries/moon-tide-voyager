@@ -46,6 +46,14 @@ const WalkthroughSection = () => {
         "/lovable-uploads/8857c36f-4e5c-46af-a89d-e4fee65c2b2a.png",
         "/lovable-uploads/32a6a308-4851-47e7-911a-69bc3b300024.png"
       ]
+    },
+    {
+      id: 5,
+      title: "Access Settings & Support",
+      description: "Review privacy policy, terms of service, send feedback, and visit the website for detailed instructions and updates.",
+      images: [
+        "/lovable-uploads/a5751ce7-d8e6-468f-a42a-0fb45b35f884.png"
+      ]
     }
   ];
 
