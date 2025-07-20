@@ -55,9 +55,14 @@ const Hero = () => {
                 {/* App Header Mockup */}
                 <div className="flex items-center justify-between w-full mb-8">
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-moon-purple to-moon-blue"></div>
-                    <span className="font-display text-xl" style={{ color: 'var(--color-text-light)' }}>
-                      MoonTide
+                    <img 
+                      src="/lovable-uploads/b6434ef6-0063-42a6-9f5c-19ad66eb88ec.png" 
+                      alt="MoonTide Logo" 
+                      className="w-8 h-8"
+                    />
+                    <span className="font-display text-xl">
+                      <span style={{ color: 'var(--color-purple)' }}>Moon</span>
+                      <span style={{ color: 'var(--color-blue)' }}>Tide</span>
                     </span>
                   </div>
                 </div>

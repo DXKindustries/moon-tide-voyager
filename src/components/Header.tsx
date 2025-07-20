@@ -5,12 +5,14 @@ const Header = () => {
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          {/* Logo goes here */}
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-moon-purple to-moon-blue flex items-center justify-center">
-            <span className="text-white font-bold text-lg">M</span>
-          </div>
-          <span className="font-display text-xl lg:text-2xl" style={{ color: 'var(--color-text-light)' }}>
-            MoonTide
+          <img 
+            src="/lovable-uploads/b6434ef6-0063-42a6-9f5c-19ad66eb88ec.png" 
+            alt="MoonTide Logo" 
+            className="w-10 h-10"
+          />
+          <span className="font-display text-xl lg:text-2xl">
+            <span style={{ color: 'var(--color-purple)' }}>Moon</span>
+            <span style={{ color: 'var(--color-blue)' }}>Tide</span>
           </span>
         </div>
 
