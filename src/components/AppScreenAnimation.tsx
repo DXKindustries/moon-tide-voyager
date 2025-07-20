@@ -45,16 +45,16 @@ const AppScreenAnimation = () => {
         
         {/* Screen content container */}
         <div className="absolute inset-4 rounded-[1.8rem] overflow-hidden">
-          {/* Screen images */}
+          {/* Screen images stacked vertically */}
           <div 
-            className="flex transition-transform duration-1000 ease-in-out h-full"
+            className="transition-transform duration-1000 ease-in-out"
             style={{ 
               transform: `translateY(-${currentScreen * 100}%)`,
-              width: '100%'
+              height: `${screens.length * 100}%`
             }}
           >
             {screens.map((screen, index) => (
-              <div key={index} className="flex-shrink-0 w-full h-full">
+              <div key={index} className="w-full h-full" style={{ height: `${100 / screens.length}%` }}>
                 <img 
                   src={screen.src}
                   alt={screen.title}
