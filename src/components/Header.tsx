@@ -66,60 +66,60 @@ const Header = () => {
       )}
 
       {/* Mobile Navigation Menu */}
-      <div 
-        className={`md:hidden fixed top-[72px] left-0 right-0 z-50 transform transition-all duration-300 ease-in-out ${
-          isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
-        }`}
-        style={{ backgroundColor: 'var(--color-bg-dark)' }}
-      >
-        <div className="border-t border-white/10">
-          <nav className="flex flex-col px-4 py-6 space-y-6 max-w-7xl mx-auto">
-            <a 
-              href="/#features" 
-              className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-2 border-b border-white/5 hover:border-purple-500/30"
-              style={{ color: 'var(--color-text-light)' }}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Features
-            </a>
-            <a 
-              href="/walkthrough" 
-              className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-2 border-b border-white/5 hover:border-purple-500/30"
-              style={{ color: 'var(--color-text-light)' }}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              How It Works
-            </a>
-            <a 
-              href="/about" 
-              className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-2 border-b border-white/5 hover:border-purple-500/30"
-              style={{ color: 'var(--color-text-light)' }}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </a>
-            <a 
-              href="/contact" 
-              className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-2 border-b border-white/5 hover:border-purple-500/30"
-              style={{ color: 'var(--color-text-light)' }}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Support
-            </a>
-            
-            {/* Mobile CTA Button */}
-            <div className="pt-4">
+      {isMenuOpen && (
+        <div 
+          className="md:hidden absolute top-full left-0 right-0 z-50 animate-fade-in"
+          style={{ backgroundColor: 'var(--color-bg-dark)' }}
+        >
+          <div className="border-t border-white/10 shadow-lg">
+            <nav className="flex flex-col px-4 py-6 space-y-4">
               <a 
-                href="#download" 
-                className="button primary w-full text-center block py-3 px-6 text-base"
+                href="/#features" 
+                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-3 border-b border-white/5 hover:border-purple-500/30"
+                style={{ color: 'var(--color-text-light)' }}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Download App
+                Features
               </a>
-            </div>
-          </nav>
+              <a 
+                href="/walkthrough" 
+                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-3 border-b border-white/5 hover:border-purple-500/30"
+                style={{ color: 'var(--color-text-light)' }}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                How It Works
+              </a>
+              <a 
+                href="/about" 
+                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-3 border-b border-white/5 hover:border-purple-500/30"
+                style={{ color: 'var(--color-text-light)' }}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </a>
+              <a 
+                href="/contact" 
+                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-3 border-b border-white/5 hover:border-purple-500/30"
+                style={{ color: 'var(--color-text-light)' }}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Support
+              </a>
+              
+              {/* Mobile CTA Button */}
+              <div className="pt-4">
+                <a 
+                  href="#download" 
+                  className="button primary w-full text-center block py-3 px-6 text-base rounded-lg"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Download App
+                </a>
+              </div>
+            </nav>
+          </div>
         </div>
-      </div>
+      )}
     </header>
   );
 };
