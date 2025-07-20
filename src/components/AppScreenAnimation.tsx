@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 
 const AppScreenAnimation = () => {
   const [currentScreen, setCurrentScreen] = useState(0);
+  const [nextScreen, setNextScreen] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   
   const screens = [
     {
@@ -24,11 +26,19 @@ const AppScreenAnimation = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentScreen((prev) => (prev + 1) % screens.length);
-    }, 3000); // Change screen every 3 seconds
+      const next = (currentScreen + 1) % screens.length;
+      setNextScreen(next);
+      setIsTransitioning(true);
+      
+      // Wait for transition to complete before updating current screen
+      setTimeout(() => {
+        setCurrentScreen(next);
+        setIsTransitioning(false);
+      }, 500); // Half the transition duration
+    }, 3000);
 
     return () => clearInterval(interval);
-  }, [screens.length]);
+  }, [currentScreen, screens.length]);
 
   return (
     <div className="relative">
@@ -45,13 +55,23 @@ const AppScreenAnimation = () => {
         
         {/* Screen content container */}
         <div className="absolute inset-4 rounded-[1.8rem] overflow-hidden">
-          {/* Current screen only */}
-          <div className="w-full h-full">
+          {/* Current screen */}
+          <div className="w-full h-full relative">
             <img 
               src={screens[currentScreen].src}
               alt={screens[currentScreen].title}
-              className="w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
+              className={`w-full h-full object-cover absolute transition-opacity duration-1000 ease-in-out ${
+                isTransitioning ? 'opacity-0' : 'opacity-100'
+              }`}
             />
+            {/* Next screen (for smooth transition) */}
+            {isTransitioning && (
+              <img 
+                src={screens[nextScreen].src}
+                alt={screens[nextScreen].title}
+                className="w-full h-full object-cover absolute transition-opacity duration-1000 ease-in-out opacity-100"
+              />
+            )}
           </div>
         </div>
 
@@ -64,7 +84,14 @@ const AppScreenAnimation = () => {
         {screens.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentScreen(index)}
+            onClick={() => {
+              setNextScreen(index);
+              setIsTransitioning(true);
+              setTimeout(() => {
+                setCurrentScreen(index);
+                setIsTransitioning(false);
+              }, 500);
+            }}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
               index === currentScreen 
                 ? 'w-8' 
