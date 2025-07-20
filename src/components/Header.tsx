@@ -4,7 +4,7 @@ const Header = () => {
             style={{ backgroundColor: 'var(--color-bg-dark)' }}>
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
-        <div className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
           <img 
             src="/lovable-uploads/b6434ef6-0063-42a6-9f5c-19ad66eb88ec.png" 
             alt="MoonTide Logo" 
@@ -14,11 +14,11 @@ const Header = () => {
             <span style={{ color: 'hsl(var(--color-purple))' }}>Moon</span>
             <span style={{ color: 'hsl(var(--color-blue))' }}>Tide</span>
           </span>
-        </div>
+        </a>
 
         {/* Navigation - Hidden on mobile, can be added later */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#features" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
+          <a href="/#features" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
              style={{ color: 'var(--color-text-light)' }}>
             Features
           </a>
