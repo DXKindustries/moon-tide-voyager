@@ -32,14 +32,6 @@ const Header = () => {
           </a>
           <a href="/contact" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
              style={{ color: 'var(--color-text-light)' }}>
-            Contact
-          </a>
-          <a href="#download" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
-             style={{ color: 'var(--color-text-light)' }}>
-            Download
-          </a>
-          <a href="#support" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
-             style={{ color: 'var(--color-text-light)' }}>
             Support
           </a>
         </nav>
