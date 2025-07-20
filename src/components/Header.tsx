@@ -11,8 +11,8 @@ const Header = () => {
             className="w-10 h-10"
           />
           <span className="font-display text-xl lg:text-2xl">
-            <span style={{ color: 'var(--color-purple)' }}>Moon</span>
-            <span style={{ color: 'var(--color-blue)' }}>Tide</span>
+            <span style={{ color: 'hsl(var(--color-purple))' }}>Moon</span>
+            <span style={{ color: 'hsl(var(--color-blue))' }}>Tide</span>
           </span>
         </div>
 

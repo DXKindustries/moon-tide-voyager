@@ -70,7 +70,7 @@ const WalkthroughSection = () => {
             </span>
           </h2>
           <p className="font-body text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed"
-             style={{ color: 'var(--color-text-light)' }}>
+             style={{ color: 'hsl(var(--color-text-light))' }}>
             Follow these simple steps to start tracking lunar cycles and tidal patterns with precision.
           </p>
         </div>
@@ -83,7 +83,7 @@ const WalkthroughSection = () => {
                 key={index}
                 className="w-2 h-2 rounded-full transition-all duration-300"
                 style={{ 
-                  backgroundColor: index === 0 ? 'var(--color-purple)' : 'var(--color-grey)' 
+                  backgroundColor: index === 0 ? 'hsl(var(--color-purple))' : 'hsl(var(--color-grey))' 
                 }}
               />
             ))}
@@ -98,20 +98,25 @@ const WalkthroughSection = () => {
               {/* Step Header */}
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full mb-4"
-                     style={{ backgroundColor: 'var(--color-purple)' }}>
+                     style={{ backgroundColor: 'hsl(var(--color-purple))' }}>
                   <span className="font-body font-bold text-lg"
-                        style={{ color: 'var(--color-selection-text)' }}>
+                        style={{ color: 'hsl(var(--color-selection-text))' }}>
                     {step.id}
                   </span>
                 </div>
                 <h3 className="font-body font-medium text-2xl lg:text-3xl mb-4"
-                    style={{ color: 'var(--color-text-light)' }}>
+                    style={{ color: 'hsl(var(--color-text-light))' }}>
                   {step.title}
                 </h3>
-                <p className="font-body text-lg leading-relaxed max-w-2xl mx-auto"
-                   style={{ color: 'var(--color-grey)' }}>
-                  {step.description}
-                </p>
+                <div 
+                  className="font-body text-lg leading-relaxed max-w-2xl mx-auto"
+                  style={{ color: 'hsl(var(--color-grey))' }}
+                  dangerouslySetInnerHTML={{
+                    __html: step.id === 1 
+                      ? "Open <span style='color: hsl(270 62% 64%)'>Moon</span><span style='color: hsl(196 87% 57%)'>Tide</span> and enter your ZIP code to find the nearest NOAA tide station."
+                      : step.description
+                  }}
+                />
               </div>
 
               {/* Screenshots Grid */}
@@ -125,7 +130,7 @@ const WalkthroughSection = () => {
                     <div className="relative group">
                       {/* Phone Frame */}
                       <div className="relative rounded-[2rem] p-3 shadow-2xl transition-transform duration-300 group-hover:scale-105"
-                           style={{ backgroundColor: 'var(--color-card-bg)' }}>
+                           style={{ backgroundColor: 'hsl(var(--color-card-bg))' }}>
                         
                         {/* Screenshot */}
                         <div className="relative rounded-[1.5rem] overflow-hidden aspect-[9/19.5] w-64 sm:w-72">
@@ -140,9 +145,9 @@ const WalkthroughSection = () => {
 
                       {/* Step Number Badge */}
                       <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full flex items-center justify-center"
-                           style={{ backgroundColor: 'var(--color-purple)' }}>
+                           style={{ backgroundColor: 'hsl(var(--color-purple))' }}>
                         <span className="text-xs font-bold"
-                              style={{ color: 'var(--color-selection-text)' }}>
+                              style={{ color: 'hsl(var(--color-selection-text))' }}>
                           {imageIndex + 1}
                         </span>
                       </div>
@@ -156,9 +161,9 @@ const WalkthroughSection = () => {
 
         {/* Coming Soon Message */}
         <div className="text-center mt-16 pt-8 border-t border-opacity-20"
-             style={{ borderColor: 'var(--color-grey)' }}>
+             style={{ borderColor: 'hsl(var(--color-grey))' }}>
           <p className="font-body text-sm"
-             style={{ color: 'var(--color-grey)' }}>
+             style={{ color: 'hsl(var(--color-grey))' }}>
             More walkthrough steps coming as you provide additional images...
           </p>
         </div>

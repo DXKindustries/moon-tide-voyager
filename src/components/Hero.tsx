@@ -24,7 +24,7 @@ const Hero = () => {
 
         {/* Subheadline */}
         <p className="font-body text-lg sm:text-xl lg:text-2xl leading-relaxed mb-8 lg:mb-12"
-           style={{ color: 'var(--color-text-light)' }}>
+           style={{ color: 'hsl(var(--color-text-light))' }}>
           NOAA-backed tide forecasts, moon phase tracking, and sunrise/sunset timing — all by ZIP code.
         </p>
 
@@ -61,8 +61,8 @@ const Hero = () => {
                       className="w-8 h-8"
                     />
                     <span className="font-display text-xl">
-                      <span style={{ color: 'var(--color-purple)' }}>Moon</span>
-                      <span style={{ color: 'var(--color-blue)' }}>Tide</span>
+                      <span style={{ color: 'hsl(var(--color-purple))' }}>Moon</span>
+                      <span style={{ color: 'hsl(var(--color-blue))' }}>Tide</span>
                     </span>
                   </div>
                 </div>
@@ -70,11 +70,11 @@ const Hero = () => {
                 {/* Moon Phase Mockup */}
                 <div className="flex flex-col items-center text-center mb-8">
                   <div className="w-32 h-32 rounded-full mb-4 bg-gradient-to-br"
-                       style={{ backgroundColor: 'var(--color-purple)' }}></div>
-                  <h3 className="font-display text-lg mb-2" style={{ color: 'var(--color-purple)' }}>
+                       style={{ backgroundColor: 'hsl(var(--color-purple))' }}></div>
+                  <h3 className="font-display text-lg mb-2" style={{ color: 'hsl(var(--color-purple))' }}>
                     Waning Crescent
                   </h3>
-                  <p className="text-sm" style={{ color: 'var(--color-grey)' }}>
+                  <p className="text-sm" style={{ color: 'hsl(var(--color-grey))' }}>
                     July 18, 2025
                   </p>
                 </div>
@@ -82,16 +82,16 @@ const Hero = () => {
                 {/* Data Mockup */}
                 <div className="w-full space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-sm" style={{ color: 'var(--color-grey)' }}>Illumination</span>
-                    <span className="font-medium text-lg" style={{ color: 'var(--color-purple)' }}>43%</span>
+                    <span className="text-sm" style={{ color: 'hsl(var(--color-grey))' }}>Illumination</span>
+                    <span className="font-medium text-lg" style={{ color: 'hsl(var(--color-purple))' }}>43%</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-sm" style={{ color: 'var(--color-grey)' }}>Moonrise</span>
-                    <span className="font-medium" style={{ color: 'var(--color-text-light)' }}>6:42 PM</span>
+                    <span className="text-sm" style={{ color: 'hsl(var(--color-grey))' }}>Moonrise</span>
+                    <span className="font-medium" style={{ color: 'hsl(var(--color-text-light))' }}>6:42 PM</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-sm" style={{ color: 'var(--color-grey)' }}>Moonset</span>
-                    <span className="font-medium" style={{ color: 'var(--color-text-light)' }}>7:15 AM</span>
+                    <span className="text-sm" style={{ color: 'hsl(var(--color-grey))' }}>Moonset</span>
+                    <span className="font-medium" style={{ color: 'hsl(var(--color-text-light))' }}>7:15 AM</span>
                   </div>
                 </div>
               </div>

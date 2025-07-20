@@ -37,7 +37,7 @@ const FeatureGrid = () => {
             </span>
           </h2>
           <p className="font-body text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed"
-             style={{ color: 'var(--color-text-light)' }}>
+             style={{ color: 'hsl(var(--color-text-light))' }}>
             Track lunar cycles, tidal patterns, and solar timing with precision data from trusted sources.
           </p>
         </div>
@@ -59,7 +59,7 @@ const FeatureGrid = () => {
                     <IconComponent 
                       size={48} 
                       strokeWidth={1.5}
-                      style={{ color: 'var(--color-purple)' }}
+                      style={{ color: 'hsl(var(--color-purple))' }}
                       className="group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
@@ -68,11 +68,11 @@ const FeatureGrid = () => {
                 {/* Content */}
                 <div>
                   <h3 className="font-body font-medium text-xl lg:text-2xl mb-3 leading-tight"
-                      style={{ color: 'var(--color-text-light)' }}>
+                      style={{ color: 'hsl(var(--color-text-light))' }}>
                     {feature.title}
                   </h3>
                   <p className="font-body text-base lg:text-lg leading-relaxed"
-                     style={{ color: 'var(--color-grey)' }}>
+                     style={{ color: 'hsl(var(--color-grey))' }}>
                     {feature.description}
                   </p>
                 </div>
