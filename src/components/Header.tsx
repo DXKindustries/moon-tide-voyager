@@ -57,17 +57,26 @@ const Header = () => {
         </button>
       </div>
 
+      {/* Mobile Navigation Overlay */}
+      {isMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          onClick={() => setIsMenuOpen(false)}
+        />
+      )}
+
       {/* Mobile Navigation Menu */}
       <div 
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+        className={`md:hidden fixed top-[72px] left-0 right-0 z-50 transform transition-all duration-300 ease-in-out ${
+          isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
         }`}
+        style={{ backgroundColor: 'var(--color-bg-dark)' }}
       >
-        <div className="mt-4 pb-4 border-t border-white/10">
-          <nav className="flex flex-col gap-4 pt-4 animate-fade-in">
+        <div className="border-t border-white/10">
+          <nav className="flex flex-col px-4 py-6 space-y-6 max-w-7xl mx-auto">
             <a 
               href="/#features" 
-              className="font-body text-base font-medium hover:opacity-80 transition-opacity block transform hover:translate-x-2 transition-transform duration-200"
+              className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-2 border-b border-white/5 hover:border-purple-500/30"
               style={{ color: 'var(--color-text-light)' }}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -75,7 +84,7 @@ const Header = () => {
             </a>
             <a 
               href="/walkthrough" 
-              className="font-body text-base font-medium hover:opacity-80 transition-opacity block transform hover:translate-x-2 transition-transform duration-200"
+              className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-2 border-b border-white/5 hover:border-purple-500/30"
               style={{ color: 'var(--color-text-light)' }}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -83,7 +92,7 @@ const Header = () => {
             </a>
             <a 
               href="/about" 
-              className="font-body text-base font-medium hover:opacity-80 transition-opacity block transform hover:translate-x-2 transition-transform duration-200"
+              className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-2 border-b border-white/5 hover:border-purple-500/30"
               style={{ color: 'var(--color-text-light)' }}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -91,12 +100,23 @@ const Header = () => {
             </a>
             <a 
               href="/contact" 
-              className="font-body text-base font-medium hover:opacity-80 transition-opacity block transform hover:translate-x-2 transition-transform duration-200"
+              className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-2 border-b border-white/5 hover:border-purple-500/30"
               style={{ color: 'var(--color-text-light)' }}
               onClick={() => setIsMenuOpen(false)}
             >
               Support
             </a>
+            
+            {/* Mobile CTA Button */}
+            <div className="pt-4">
+              <a 
+                href="#download" 
+                className="button primary w-full text-center block py-3 px-6 text-base"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Download App
+              </a>
+            </div>
           </nav>
         </div>
       </div>
