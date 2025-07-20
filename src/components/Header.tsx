@@ -46,8 +46,9 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button 
           onClick={toggleMenu}
-          className="md:hidden p-2 hover:opacity-80 transition-opacity"
+          className="md:hidden p-3 -mr-3 hover:opacity-80 transition-opacity touch-manipulation"
           aria-label="Toggle menu"
+          style={{ minWidth: '44px', minHeight: '44px' }}
         >
           {isMenuOpen ? (
             <X size={24} style={{ color: 'var(--color-text-light)' }} />
@@ -72,45 +73,46 @@ const Header = () => {
           style={{ backgroundColor: 'var(--color-bg-dark)' }}
         >
           <div className="border-t border-white/10 shadow-lg">
-            <nav className="flex flex-col px-4 py-6 space-y-4">
+            <nav className="flex flex-col px-4 py-4 space-y-1">
               <a 
                 href="/#features" 
-                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-3 border-b border-white/5 hover:border-purple-500/30"
-                style={{ color: 'var(--color-text-light)' }}
+                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-4 px-2 rounded-lg hover:bg-white/5 touch-manipulation"
+                style={{ color: 'var(--color-text-light)', minHeight: '44px' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Features
               </a>
               <a 
                 href="/walkthrough" 
-                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-3 border-b border-white/5 hover:border-purple-500/30"
-                style={{ color: 'var(--color-text-light)' }}
+                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-4 px-2 rounded-lg hover:bg-white/5 touch-manipulation"
+                style={{ color: 'var(--color-text-light)', minHeight: '44px' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 How It Works
               </a>
               <a 
                 href="/about" 
-                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-3 border-b border-white/5 hover:border-purple-500/30"
-                style={{ color: 'var(--color-text-light)' }}
+                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-4 px-2 rounded-lg hover:bg-white/5 touch-manipulation"
+                style={{ color: 'var(--color-text-light)', minHeight: '44px' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </a>
               <a 
                 href="/contact" 
-                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-3 border-b border-white/5 hover:border-purple-500/30"
-                style={{ color: 'var(--color-text-light)' }}
+                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-4 px-2 rounded-lg hover:bg-white/5 touch-manipulation"
+                style={{ color: 'var(--color-text-light)', minHeight: '44px' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Support
               </a>
               
               {/* Mobile CTA Button */}
-              <div className="pt-4">
+              <div className="pt-4 px-2">
                 <a 
                   href="#download" 
-                  className="button primary w-full text-center block py-3 px-6 text-base rounded-lg"
+                  className="button primary w-full text-center block py-4 px-6 text-base rounded-lg touch-manipulation"
+                  style={{ minHeight: '48px' }}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Download App
