@@ -43,9 +43,10 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#support" className="font-body text-sm hover:opacity-80 transition-opacity"
-                   style={{ color: 'var(--color-text-light)' }}>
-                  Support
+                <a href="mailto:moontidesite@gmail.com?subject=MoonTide%20App%20Feedback" 
+                   className="font-body text-sm hover:opacity-80 transition-opacity"
+                   style={{ color: 'hsl(var(--color-blue))' }}>
+                  📧 Send Feedback
                 </a>
               </li>
             </ul>

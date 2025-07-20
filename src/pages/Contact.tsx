@@ -25,12 +25,39 @@ const Contact = () => {
                 If you have questions, need support, or want to share feedback about MoonTide, we'd love to hear from you!
               </p>
 
+              {/* Feedback Section */}
               <div className="bg-white/5 rounded-xl p-6 border mb-6" 
                    style={{ borderColor: 'hsl(var(--color-blue) / 0.2)' }}>
                 <h2 className="font-display text-xl mb-4" 
                     style={{ color: 'hsl(var(--color-purple))' }}>
-                  Email
+                  Send Feedback
                 </h2>
+                <p className="font-body text-sm mb-4" 
+                   style={{ color: 'var(--color-text-light)' }}>
+                  Have a feature request or found a bug? Your feedback helps us improve!
+                </p>
+                <a href="mailto:moontidesite@gmail.com?subject=MoonTide%20App%20Feedback" 
+                   className="inline-flex items-center gap-2 font-body text-sm font-medium px-4 py-2 rounded-lg hover:opacity-80 transition-opacity border"
+                   style={{ 
+                     color: 'hsl(var(--color-blue))', 
+                     borderColor: 'hsl(var(--color-blue) / 0.3)',
+                     backgroundColor: 'hsl(var(--color-blue) / 0.1)'
+                   }}>
+                  📧 Send us your suggestions
+                </a>
+              </div>
+
+              {/* General Contact */}
+              <div className="bg-white/5 rounded-xl p-6 border mb-6" 
+                   style={{ borderColor: 'hsl(var(--color-purple) / 0.2)' }}>
+                <h2 className="font-display text-xl mb-4" 
+                    style={{ color: 'hsl(var(--color-purple))' }}>
+                  General Contact
+                </h2>
+                <p className="font-body text-sm mb-3" 
+                   style={{ color: 'var(--color-text-light)' }}>
+                  Email us directly:
+                </p>
                 <a href="mailto:moontidesite@gmail.com" 
                    className="font-body text-lg font-medium hover:opacity-80 transition-opacity"
                    style={{ color: 'hsl(var(--color-blue))' }}>
