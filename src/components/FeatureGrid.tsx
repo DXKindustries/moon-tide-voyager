@@ -1,4 +1,5 @@
 import { Moon, Waves, Sun, Calendar } from "lucide-react";
+import AnimatedMoon from "@/components/AnimatedMoon";
 
 const FeatureGrid = () => {
   const features = [
@@ -55,13 +56,17 @@ const FeatureGrid = () => {
                 {/* Icon */}
                 <div className="mb-6">
                   <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-1"
-                       style={{ backgroundColor: 'var(--color-bg-dark)' }}>
-                    <IconComponent 
-                      size={48} 
-                      strokeWidth={1.5}
-                      style={{ color: 'hsl(var(--color-purple))' }}
-                      className="group-hover:scale-110 transition-transform duration-300"
-                    />
+                       style={{ backgroundColor: 'hsl(var(--color-bg-dark))' }}>
+                    {feature.icon === Moon ? (
+                      <AnimatedMoon size="md" phase="full" />
+                    ) : (
+                      <IconComponent 
+                        size={48} 
+                        strokeWidth={1.5}
+                        style={{ color: 'hsl(var(--color-purple))' }}
+                        className="group-hover:scale-110 transition-transform duration-300"
+                      />
+                    )}
                   </div>
                 </div>
 

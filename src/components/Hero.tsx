@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import AnimatedMoon from "@/components/AnimatedMoon";
 
 const Hero = () => {
   return (
@@ -69,8 +70,7 @@ const Hero = () => {
 
                 {/* Moon Phase Mockup */}
                 <div className="flex flex-col items-center text-center mb-8">
-                  <div className="w-32 h-32 rounded-full mb-4 bg-gradient-to-br"
-                       style={{ backgroundColor: 'hsl(var(--color-purple))' }}></div>
+                  <AnimatedMoon size="lg" phase="waning-crescent" className="mb-4" />
                   <h3 className="font-display text-lg mb-2" style={{ color: 'hsl(var(--color-purple))' }}>
                     Waning Crescent
                   </h3>
