@@ -52,12 +52,12 @@ const Walkthrough = () => {
           detail: "Monitor precise tide charts showing high and low tide predictions"
         },
         {
-          src: "/lovable-uploads/d0406990-e899-4ac8-9867-f98690e88abd.png",
-          detail: "View ZIP code and view solar data including sunrise and sunset times"
-        },
-        {
           src: "/lovable-uploads/da1ba0f5-9bbc-4e7b-8885-6561391cd646.png",
           detail: "View detailed 7-day weather forecasts with temperature and conditions"
+        },
+        {
+          src: "/lovable-uploads/d0406990-e899-4ac8-9867-f98690e88abd.png",
+          detail: "View ZIP code and view solar data including sunrise and sunset times"
         }
       ]
     },
