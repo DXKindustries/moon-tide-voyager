@@ -29,7 +29,7 @@ const Walkthrough = () => {
           detail: "After selecting location click show tides button"
         },
         {
-          src: "/lovable-uploads/25795b27-0c0b-4d99-ad07-bf69a312b23a.png",
+          src: "/lovable-uploads/31c234c2-de89-42ad-a595-d1594b4a0507.png",
           detail: "Get instant access to your personalized tide and moon dashboard"
         }
       ]
