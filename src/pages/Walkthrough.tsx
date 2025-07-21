@@ -44,7 +44,7 @@ const Walkthrough = () => {
           detail: "Track real-time moon phases with beautiful visual representations on splash screen and view moon data and tide information after clicking show tides button"
         },
         {
-          src: "/lovable-uploads/16ab048c-aff2-4f64-94d5-63c018bfeac9.png",
+          src: "/lovable-uploads/6bb454c7-a648-4d8f-a593-6969a4be68c4.png",
           detail: "View solar data by zip code for sunrise and sunset times with daylight/darkness times from summer or winter solstice reference"
         },
         {
