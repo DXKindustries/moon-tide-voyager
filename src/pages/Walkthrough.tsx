@@ -48,7 +48,7 @@ const Walkthrough = () => {
           detail: "View solar data by zip code for sunrise and sunset times with daylight/darkness times from summer or winter solstice reference"
         },
         {
-          src: "/lovable-uploads/3c90c96d-8fda-4fda-b2a4-80f120bee3f4.png",
+          src: "/lovable-uploads/44f15d7f-be59-4282-8953-d988137d8d22.png",
           detail: "Monitor precise tide charts showing high and low tide predictions"
         },
         {
