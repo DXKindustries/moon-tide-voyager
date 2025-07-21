@@ -52,7 +52,7 @@ const Walkthrough = () => {
           detail: "Monitor precise tide charts showing high and low tide predictions"
         },
         {
-          src: "/lovable-uploads/da1ba0f5-9bbc-4e7b-8885-6561391cd646.png",
+          src: "/lovable-uploads/51412d06-630f-4a5c-b4f5-dc1d0f3db4c9.png",
           detail: "User can scroll animation for tide information"
         },
         {
