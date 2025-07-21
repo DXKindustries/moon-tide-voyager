@@ -56,7 +56,7 @@ const Walkthrough = () => {
           detail: "User can scroll animation for tide information"
         },
         {
-          src: "/lovable-uploads/d0406990-e899-4ac8-9867-f98690e88abd.png",
+          src: "/lovable-uploads/22c2a212-f82d-4f2e-b4c7-ecb19a85299e.png",
           detail: "7 day tide forecast with lunar moon phase"
         }
       ]
