@@ -19,7 +19,7 @@ const Footer = () => {
             </a>
             <p className="font-body text-sm max-w-md" 
                style={{ color: 'var(--color-text-light)' }}>
-              NOAA-backed tide forecasts, moon phase tracking, and sunrise/sunset timing — all by ZIP code.
+              NOAA-backed tide forecasts, moon phase tracking, and sunrise/sunset timing by ZIP code.
             </p>
           </div>
 
