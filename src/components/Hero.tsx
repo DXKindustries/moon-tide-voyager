@@ -23,7 +23,7 @@ const Hero = () => {
         {/* Subheadline */}
         <p className="font-body text-base sm:text-lg md:text-xl leading-relaxed mb-8 sm:mb-12 max-w-xl mx-auto lg:mx-0"
            style={{ color: 'hsl(var(--color-grey))' }}>
-          NOAA-backed tide forecasts and moon phase tracking by ZIP code.
+          NOAA-backed tide forecasts, moon phases, and solar events by ZIP code.
         </p>
 
         {/* CTA Buttons */}
