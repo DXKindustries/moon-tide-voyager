@@ -72,11 +72,11 @@ const Walkthrough = () => {
         },
         {
           src: "/lovable-uploads/36eb062a-8595-4377-a440-003c7cd399bc.png",
-          detail: "Discover traditional full moon names and their cultural significance"
+          detail: "View detailed solstice and equinox tracking with precise timing information"
         },
         {
           src: "/lovable-uploads/bc28877f-15d6-4815-a10b-acbd0681d493.png",
-          detail: "Track solar events like solstices and equinoxes throughout the year"
+          detail: "Monitor seasonal solar events and transitions throughout the calendar year"
         }
       ]
     },
