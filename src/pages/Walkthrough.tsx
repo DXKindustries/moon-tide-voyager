@@ -14,7 +14,7 @@ const Walkthrough = () => {
         },
         {
           src: "/lovable-uploads/ae77c6a6-4574-43a0-af47-c0e3153a65cf.png",
-          detail: "Enter your ZIP code to automatically find your nearest tide station"
+          detail: "Enter your ZIP code to get accurate sunrise and sunset times for your location"
         },
         {
           src: "/lovable-uploads/442f21e6-21bf-48bb-affc-1c87a3ae31b6.png",
