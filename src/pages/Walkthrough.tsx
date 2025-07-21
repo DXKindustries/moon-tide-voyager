@@ -41,15 +41,15 @@ const Walkthrough = () => {
       images: [
         {
           src: "/lovable-uploads/7fd14ce8-0b8b-49c6-a772-7f49cf5dc0e6.png",
-          detail: "View detailed 7-day weather forecasts with temperature and conditions"
+          detail: "View moon data and tide information after clicking show tides button"
         },
         {
           src: "/lovable-uploads/16ab048c-aff2-4f64-94d5-63c018bfeac9.png",
-          detail: "Track real-time moon phases with beautiful visual representations"
+          detail: "Track real-time moon phases with beautiful visual representations on splash screen"
         },
         {
           src: "/lovable-uploads/3c90c96d-8fda-4fda-b2a4-80f120bee3f4.png",
-          detail: "Analyze daylight hours, sunrise, and sunset times for planning"
+          detail: "Enter ZIP code and view solar data including sunrise and sunset times"
         },
         {
           src: "/lovable-uploads/da1ba0f5-9bbc-4e7b-8885-6561391cd646.png",
@@ -57,7 +57,7 @@ const Walkthrough = () => {
         },
         {
           src: "/lovable-uploads/d0406990-e899-4ac8-9867-f98690e88abd.png",
-          detail: "Access all key information in one comprehensive overview screen"
+          detail: "View detailed 7-day weather forecasts with temperature and conditions"
         }
       ]
     },
