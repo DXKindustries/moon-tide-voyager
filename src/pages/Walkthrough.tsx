@@ -18,15 +18,15 @@ const Walkthrough = () => {
         },
         {
           src: "/lovable-uploads/442f21e6-21bf-48bb-affc-1c87a3ae31b6.png",
-          detail: "Browse and select from multiple nearby NOAA tide monitoring stations"
+          detail: "First select state so NOAA stations can be found for the state you want information about"
         },
         {
           src: "/lovable-uploads/e7ee071d-d8a2-47bb-b2a8-43ef0967f622.png",
-          detail: "Confirm your location selection for accurate local tide data"
+          detail: "Scroll and find location to see tide information"
         },
         {
           src: "/lovable-uploads/8daddf21-b65d-4854-9dac-8b0333838086.png",
-          detail: "Access comprehensive help and tutorial information anytime"
+          detail: "After selecting location click show tides button"
         },
         {
           src: "/lovable-uploads/25795b27-0c0b-4d99-ad07-bf69a312b23a.png",
