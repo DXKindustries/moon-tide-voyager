@@ -49,15 +49,15 @@ const Walkthrough = () => {
         },
         {
           src: "/lovable-uploads/3c90c96d-8fda-4fda-b2a4-80f120bee3f4.png",
-          detail: "Enter ZIP code and view solar data including sunrise and sunset times"
-        },
-        {
-          src: "/lovable-uploads/da1ba0f5-9bbc-4e7b-8885-6561391cd646.png",
           detail: "Monitor precise tide charts showing high and low tide predictions"
         },
         {
-          src: "/lovable-uploads/d0406990-e899-4ac8-9867-f98690e88abd.png",
+          src: "/lovable-uploads/da1ba0f5-9bbc-4e7b-8885-6561391cd646.png",
           detail: "View detailed 7-day weather forecasts with temperature and conditions"
+        },
+        {
+          src: "/lovable-uploads/d0406990-e899-4ac8-9867-f98690e88abd.png",
+          detail: "Enter ZIP code and view solar data including sunrise and sunset times"
         }
       ]
     },
