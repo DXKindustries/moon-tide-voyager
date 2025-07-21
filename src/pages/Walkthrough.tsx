@@ -87,23 +87,23 @@ const Walkthrough = () => {
       images: [
         {
           src: "/lovable-uploads/4f567ae3-2200-4d8d-b7aa-0f39a4401a5c.png",
-          detail: "Quick-select from your favorite states for easy location switching"
+          detail: "This screen is what shows when clicking add new button"
         },
         {
           src: "/lovable-uploads/88715845-1810-44dd-82b8-9ede31d4af5c.png",
-          detail: "Search by distance radius to find all nearby tide monitoring stations"
+          detail: "This image shows users previously selected stations in location history area"
         },
         {
           src: "/lovable-uploads/b5440ebc-23a9-4ef7-907d-2547fc72414e.png",
-          detail: "Type specific location names for instant, accurate search results"
+          detail: "This image shows previously selected states user can click state to avoid scrolling other states"
         },
         {
           src: "/lovable-uploads/8857c36f-4e5c-46af-a89d-e4fee65c2b2a.png",
-          detail: "Browse comprehensive lists of available NOAA tide stations"
+          detail: "Search by distance radius to find all nearby tide monitoring stations after selecting a reference station"
         },
         {
           src: "/lovable-uploads/32a6a308-4851-47e7-911a-69bc3b300024.png",
-          detail: "Seamlessly switch between multiple saved locations for comparison"
+          detail: "Type specific location names for instant, accurate search results - entering enough information to narrow station names for selection avoid scrolling"
         }
       ]
     },
