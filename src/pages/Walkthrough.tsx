@@ -40,7 +40,7 @@ const Walkthrough = () => {
       description: "Instantly see current moon phase, tide charts, and solar timing for your location.",
       images: [
         {
-          src: "/lovable-uploads/7fd14ce8-0b8b-49c6-a772-7f49cf5dc0e6.png",
+          src: "/lovable-uploads/31c234c2-de89-42ad-a595-d1594b4a0507.png",
           detail: "Track real-time moon phases with beautiful visual representations on splash screen and view moon data and tide information after clicking show tides button"
         },
         {
