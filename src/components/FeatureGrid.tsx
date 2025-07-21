@@ -11,12 +11,12 @@ const FeatureGrid = () => {
     {
       icon: Waves,
       title: "Live Tide Charts", 
-      description: "Graphs and tide tables pulled straight from NOAA, mapped by ZIP."
+      description: "Graphs and tide tables pulled straight from NOAA."
     },
     {
       icon: Sun,
       title: "Sunrise & Sunset Times",
-      description: "Know your daylight hours and golden hour — location-based."
+      description: "Know your daylight hours and golden hour — by ZIP code."
     },
     {
       icon: Calendar,
