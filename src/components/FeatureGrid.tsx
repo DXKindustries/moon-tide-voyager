@@ -16,7 +16,7 @@ const FeatureGrid = () => {
     {
       icon: Sun,
       title: "Sunrise & Sunset Times",
-      description: "Know your daylight hours and golden hour — by ZIP code."
+      description: "Track daylight hours, length of day, and golden hour timing by ZIP code. Perfect for planning outdoor activities and understanding seasonal light patterns."
     },
     {
       icon: Calendar,
