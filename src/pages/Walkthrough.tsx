@@ -45,7 +45,7 @@ const Walkthrough = () => {
         },
         {
           src: "/lovable-uploads/16ab048c-aff2-4f64-94d5-63c018bfeac9.png",
-          detail: "View ZIP code and view solar data including sunrise and sunset times"
+          detail: "View solar data by zip code for sunrise and sunset times with daylight/darkness times from summer or winter solstice reference"
         },
         {
           src: "/lovable-uploads/3c90c96d-8fda-4fda-b2a4-80f120bee3f4.png",
@@ -57,7 +57,7 @@ const Walkthrough = () => {
         },
         {
           src: "/lovable-uploads/d0406990-e899-4ac8-9867-f98690e88abd.png",
-          detail: "View detailed 7-day weather forecasts with temperature and conditions"
+          detail: "7 day tide forecast with lunar moon phase"
         }
       ]
     },
