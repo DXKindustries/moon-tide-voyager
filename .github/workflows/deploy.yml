@@ -3,14 +3,14 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or 'master' if that’s your default
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source code
+      - name: Checkout source
         uses: actions/checkout@v2
 
       - name: Setup Node.js
@@ -21,13 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
+      - name: Build site
         run: npm run build
-
-      - name: Set Git identity for gh-pages deploy
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
