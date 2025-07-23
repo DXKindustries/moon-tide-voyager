@@ -48,6 +48,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a href="/walkthrough" className="font-body text-sm hover:opacity-80 transition-opacity"
+                   style={{ color: 'var(--color-text-light)' }}>
+                  How It Works
+                </a>
+              </li>
+              <li>
                 <a href="/about" className="font-body text-sm hover:opacity-80 transition-opacity"
                    style={{ color: 'var(--color-text-light)' }}>
                   About

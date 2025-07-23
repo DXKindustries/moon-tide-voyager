@@ -237,14 +237,6 @@ const Walkthrough = () => {
               ))}
             </div>
 
-            {/* Coming Soon Message */}
-            <div className="text-center mt-16 pt-8 border-t border-opacity-20"
-                 style={{ borderColor: 'hsl(var(--color-grey))' }}>
-              <p className="font-body text-sm"
-                 style={{ color: 'hsl(var(--color-grey))' }}>
-                More walkthrough steps coming as you provide additional images...
-              </p>
-            </div>
           </div>
         </section>
       </main>
