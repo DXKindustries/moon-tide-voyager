@@ -53,10 +53,6 @@ const Header = () => {
           >
             Features
           </Link>
-          <Link to="/walkthrough" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
-             style={{ color: 'var(--color-text-light)' }}>
-            How It Works
-          </Link>
           <Link to="/about" className="font-body text-sm font-medium hover:opacity-80 transition-opacity"
              style={{ color: 'var(--color-text-light)' }}>
             About
@@ -111,14 +107,6 @@ const Header = () => {
                 }}
               >
                 Features
-              </Link>
-              <Link 
-                to="/walkthrough" 
-                className="font-body text-lg font-medium hover:opacity-80 transition-all duration-200 py-4 px-2 rounded-lg hover:bg-white/5 touch-manipulation"
-                style={{ color: 'var(--color-text-light)', minHeight: '44px' }}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                How It Works
               </Link>
               <Link 
                 to="/about" 
