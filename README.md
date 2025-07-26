@@ -71,3 +71,15 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## How do I generate a zipped static build?
+
+Run the following command to compile the React application to plain HTML, CSS and JavaScript files in `dist` and create a `dist.zip` archive containing the static website:
+
+```sh
+npm run build:zip
+```
+
+This produces `dist.zip` which you can unzip on any server to host the site.
+
+
