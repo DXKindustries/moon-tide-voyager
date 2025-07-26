@@ -74,12 +74,12 @@ Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-trick
 
 ## How do I generate a zipped static build?
 
-Run the following command to compile the React application to plain HTML, CSS and JavaScript files in `dist` and create a `dist.zip` archive containing the static website:
+Run the following command to compile the React application to plain HTML, CSS and JavaScript files in `dist` and automatically create a `dist.zip` archive containing the static website:
 
 ```sh
-npm run build:zip
+npm run build
 ```
 
-This produces `dist.zip` which you can unzip on any server to host the site.
+After the build completes you will find a file named `dist.zip` in the project root.  Unzip that file on any server to host the site.
 
 
